@@ -221,8 +221,27 @@ img {
     border: 2px solid #1DA1F2;
     border-bottom: none;
     min-width: 50px;
-    top: -126px;
+    top: -130px;
     box-shadow: 0px 0px 10px 10px, rgba(0,0,0,0.5);
+    animation: linear; 
+}
+
+@keyframes .dropdown-content {
+	0%{
+		margin-top: 100%;
+	}
+	100%{
+		margin-top: 0%;
+	}
+}
+
+.dropdown_content ul {
+
+	-webkit-transition: height 0.3s ease-in;
+    -moz-transition: height 0.3s ease-in;
+    -o-transition: height 0.3s ease-in;
+    -ms-transition: height 0.3s ease-in;
+    transition: height 0.3s ease-in;
 }
 
 .dropdown-content ul li img {
